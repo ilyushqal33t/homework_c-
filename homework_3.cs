@@ -47,11 +47,20 @@
 // Console.Write($"d = {d:f2}");
 
 // Задача 23
-// Console.Clear();
 // Console.Write("put the number: ");
 // int num = int.Parse(Console.ReadLine() ?? "0");
 // int count = 1;
-// while (count <= num)
+// if (num > 0)
 // {
-//     Console.Write($"|{Math.Pow(count++, 3)}| ");
+//     while (count <= num)
+//     {
+//         Console.Write($"|{Math.Pow(count++, 3)}| ");
+//     }
+// }
+// else 
+// {
+//     while (count >= num)
+//     {
+//         Console.Write($"|{Math.Pow(count--, 3)}| ");
+//     }
 // }
