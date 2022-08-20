@@ -18,18 +18,30 @@
 // for (int i = 0; i < array.Length; i++)
 // {
 //     int convert = int.Parse(array[i].ToString());  // int convert = array[i] - '0'; - второй вариант  
-//     sum = sum + convert;
+//     sum += convert;
+// }
+// Console.Write($"Сумма цифр в числе {num} = {sum}");
+
+// Console.Write("Введите число: ");
+// int num = int.Parse(Console.ReadLine() ?? "0");
+// int sum = 0;
+// int count = num;
+// while (count != 0)
+// {
+//     sum += count % 10;
+//     count /= 10;
 // }
 // Console.Write($"Сумма цифр в числе {num} = {sum}");
 
 // Задача 29
-// void FillArray(int[] array)
+// int[] CreateRandomArray(int[] array)
 // {
 //     Random rnd = new Random();
 //     for (int i = 0; i < array.Length; i++)
 //     {
 //         array[i] = rnd.Next(0, 10);
 //     }
+//     return array;
 // }
 
 // void PrintArray(int[] array)
@@ -45,3 +57,14 @@
 // int[] array = new int[8];
 // FillArray(array);
 // PrintArray(array);
+
+// Второй вариант 
+// Random rand = new Random();
+// int[] array = new int[8];
+// Console.Write("[");
+// for(int i = 0; i < array.Length; i++)
+// {
+//     array[i] = rand.Next(0, 11);
+//     Console.Write($"{array[i]}" + (i < array.Length - 1 ? ", " : ""));
+// }
+// Console.Write("]");
