@@ -1,12 +1,12 @@
-// int[] FillArray(int[] array, int min, int max)
-// {
-//     Random rnd = new Random();
-//     for (int i = 0; i < array.Length; i++)
-//     {
-//         array[i] = rnd.Next(min, max + 1);
-//     }
-//     return array;
-// }
+int[] FillArray(int[] array, int min, int max)  //Функция написана для задач, находящихся ниже
+{
+    Random rnd = new Random();
+    for (int i = 0; i < array.Length; i++)
+    {
+        array[i] = rnd.Next(min, max + 1);
+    }
+    return array;
+}
 
 // Задача 34
 // int[] array = new int[4];
